@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #15224edc;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #10bfb991, #15224e9a), url(../img/pexels-pixabay-258112.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+    position: relative;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1{
+    text-transform: uppercase;
+}
+
+.heading-main{
+    display: block;
+    font-size: 5rem;
+    color: white;
+    animation-name: MoveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+@keyframes MoveInLeft{
+    0% {transform: translate(-1000px); opacity: 0;}
+    100% {transform: translate(0); opacity: 1;}
+}
+
+.heading-sub{
+    display: block;
+    color: darkblue;
+    font-size: 2rem;
+    animation-name: MoveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+@keyframes MoveInRight{
+    0% {transform: translate(1000px); opacity: 0;}
+    100% {transform: translate(0); opacity: 1;}
+}
+
+
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: col-primary;
+    border: 1px solid col-primary;
+    border-radius: corner-radius;
+    line-height: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+
+  box-shadow: 0 0 0 0 transparent;
+}
